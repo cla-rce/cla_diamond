@@ -18,4 +18,6 @@ node.override["diamond"]["source_path"] = "/usr/local/share/diamond_src"
 node.override["diamond"]["source_reference"] = '3.4'
 node.override['diamond']['add_collectors'] = ['cpu', 'diskspace', 'diskusage', 'loadavg', 'memory', 'network', 'vmstat', 'tcp']
 node.override[:diamond][:collectors][:DiskSpaceCollector][:filesystems] = 'ext2, ext3, ext4'
+
+
 include_recipe "diamond"

@@ -1,5 +1,5 @@
 site :opscode
 
 metadata
-cookbook "diamond", git: "https://github.com/BrightcoveOS/Diamond.git"
+cookbook "diamond", github: "cla-rce/diamond_cookbook"
 
