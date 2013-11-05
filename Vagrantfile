@@ -11,12 +11,7 @@ config.omnibus.chef_version = :latest
     chef.run_list = [
         "recipe[cla_diamond::default]"
     ]
-    # chef.json = { 
- #      "diamond" => { 
- #        "install_method" => "source"
- #        }
- #      }
- #   end
+    end
   end
   
   config.vm.define :lucid do |config|
@@ -26,14 +21,9 @@ config.omnibus.chef_version = :latest
     chef.run_list = [
         "recipe[diamond::default]"
     ]
-#     chef.json = { 
-#       "diamond" => { 
-#         "install_method" => "source"
-#         }
-#       }
-#     end
+    end
   end
-#   
+  
   config.vm.define :cent do |config|
     config.vm.box = "Opscode-CentOS5"
     config.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_centos-5.9_provisionerless.box"
@@ -41,15 +31,6 @@ config.omnibus.chef_version = :latest
     chef.run_list = [
         "recipe[diamond::default]"
     ]
-#     chef.json = { 
-#       "python-configobj" => {
-#         "install_method" => "yum_package"
-#       },
-#       "diamond" => { 
-#         "install_method" => "source"
-#         }
-#       }
-#     
-#     end
-  end
-end  
+    end
+  end  
+end
