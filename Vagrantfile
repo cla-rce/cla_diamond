@@ -16,7 +16,7 @@ config.omnibus.chef_version = :latest
  #        "install_method" => "source"
  #        }
  #      }
-    end
+ #   end
   end
   
   config.vm.define :lucid do |config|
@@ -32,7 +32,7 @@ config.omnibus.chef_version = :latest
 #         }
 #       }
 #     end
-#   end
+  end
 #   
   config.vm.define :cent do |config|
     config.vm.box = "Opscode-CentOS5"
@@ -51,5 +51,5 @@ config.omnibus.chef_version = :latest
 #       }
 #     
 #     end
-#   end
+  end
 end  
