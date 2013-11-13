@@ -20,6 +20,7 @@ node.override['diamond']['add_collectors'] = ['cpu', 'diskspace', 'diskusage', '
 node.override[:diamond][:collectors][:DiskSpaceCollector][:filesystems] = 'ext2, ext3, ext4'
 node.override["diamond"]["cookbook_package"]["debian"] = "diamond_3.4.deb"
 node.override["diamond"]["cookbook_package"]["redhat"] = "diamond_3.4.noarch.rpm"
+node.override["diamond"]["version"] = "3.4"
 
 
 include_recipe "diamond"
